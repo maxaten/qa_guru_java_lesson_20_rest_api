@@ -83,7 +83,7 @@ public class ReqresIn extends TestBase {
     }
 
     @Test
-    public void LoginUnsuccessfulTest200() {
+    public void LoginUnsuccessfulTest400() {
         String authBody = "{\"email\": \"peter@klaven\"}";
 
         given()
@@ -101,7 +101,7 @@ public class ReqresIn extends TestBase {
     }
 
     @Test
-    public void CreateUserTest200() {
+    public void CreateUserTest201() {
         String authBody = "{\"name\": \"morpheus\", \"job\": \"leader\"}";
 
         given()
