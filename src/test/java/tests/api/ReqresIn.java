@@ -9,7 +9,7 @@ public class ReqresIn extends TestBase {
 
 
     @Test
-    public void SingleUserTest200() {
+    public void singleUserTest200() {
         given()
                 .log().uri()
                 .log().method()
@@ -24,7 +24,7 @@ public class ReqresIn extends TestBase {
 
 
     @Test
-    public void RegisterSuccessfulTest200() {
+    public void registerSuccessfulTest200() {
         String authBody = "{\"email\": \"eve.holt@reqres.in\", \"password\": \"pistol\"}";
 
         given()
@@ -45,7 +45,7 @@ public class ReqresIn extends TestBase {
     }
 
     @Test
-    public void RegisterUnsuccessfulTest400() {
+    public void registerUnsuccessfulTest400() {
         String authBody = "{\"email\": \"sydney@fife\"}";
 
         given()
@@ -65,7 +65,7 @@ public class ReqresIn extends TestBase {
 
 
     @Test
-    public void LoginSuccessfulTest200() {
+    public void loginSuccessfulTest200() {
         String authBody = "{\"email\": \"eve.holt@reqres.in\", \"password\": \"cityslicka\"}";
 
         given()
@@ -83,7 +83,7 @@ public class ReqresIn extends TestBase {
     }
 
     @Test
-    public void LoginUnsuccessfulTest400() {
+    public void loginUnsuccessfulTest400() {
         String authBody = "{\"email\": \"peter@klaven\"}";
 
         given()
@@ -101,7 +101,7 @@ public class ReqresIn extends TestBase {
     }
 
     @Test
-    public void CreateUserTest201() {
+    public void createUserTest201() {
         String authBody = "{\"name\": \"morpheus\", \"job\": \"leader\"}";
 
         given()
